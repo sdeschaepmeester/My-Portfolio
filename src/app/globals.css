@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hide scrollbar */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  /* Internet Explorer */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Hide scroolbar (Chrome, Safari, Edge Chromium) */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white!important;
+  background-color: transparent!important;
+  font-size: 3rem;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #d3d3d3!important;
+}

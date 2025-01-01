@@ -1,0 +1,29 @@
+#custom-cursor {
+    display: none;
+}
+
+.paillettes {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    animation: scatter 0.5s forwards;
+}
+
+@keyframes scatter {
+    0% {
+        transform: scale(1) translate(0, 0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    100% {
+        transform: scale(0) translate(10px, 10px);
+        opacity: 0;
+        visibility: hidden;
+    }
+}
