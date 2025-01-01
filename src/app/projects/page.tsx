@@ -1,5 +1,4 @@
 export default function Projects() {
-
   const projects = [
     {
       title: "Mon portfolio",
@@ -15,7 +14,7 @@ export default function Projects() {
     },
     {
       title: "Tamagotchi",
-      description: "Projet réalisé avec des éléments Raspberry Pi.",
+      description: "Projet à réaliser avec des éléments Raspberry Pi.",
       image: "/tamagotchi_img.jpeg",
       status: "Non commencé",
     },
@@ -29,12 +28,12 @@ export default function Projects() {
 
   return (
     <div className="h-[calc(100vh-64px)] bg-gray-100 overflow-hidden flex flex-col">
-      <div className="max-w-6xl mx-auto flex-grow">
-        <h1 className="text-4xl font-bold text-center mb-6 mt-8 text-[#705949]">Mes Projets</h1>
-        <p className="text-center text-gray-600 mb-8">
+      <div className="max-w-6xl mx-auto flex-grow overflow-auto">
+        <h1 className="text-3xl md:text-4xl font-bold text-center mb-6 mt-8 text-[#705949]">Mes Projets</h1>
+        <p className="text-center text-gray-600 mb-8 text-sm md:text-base">
           Ci-dessous les projets personnels sur lesquels j&apos;ai travaillé ou travaille actuellement.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -43,11 +42,11 @@ export default function Projects() {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-40 md:h-48 object-cover"
               />
-              <div className="p-6 flex-grow flex flex-col">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">{project.title}</h2>
-                <p className="text-gray-600 mb-4 text-center flex-grow">{project.description}</p>
+              <div className="p-4 md:p-6 flex-grow flex flex-col">
+                <h2 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4 text-center">{project.title}</h2>
+                <p className="text-gray-600 mb-4 text-center text-sm md:text-base flex-grow">{project.description}</p>
                 <div
                   className={`w-full text-center px-4 py-3 text-white font-bold rounded ${statusColors[project.status as keyof typeof statusColors]} mt-auto`}
                 >
