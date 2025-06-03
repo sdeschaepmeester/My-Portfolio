@@ -1,3 +1,7 @@
+html, body {
+  overflow: hidden;
+}
+
 #custom-cursor {
     display: none;
 }

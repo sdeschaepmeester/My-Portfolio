@@ -4,7 +4,7 @@ export default function CV() {
       <div className="max-w-6xl text-center">
         <h1 className="text-4xl font-bold mb-8 text-[#705949]">Mon CV</h1>
         <p className="text-gray-600 mb-12">
-          Je recherche un CDI de développeur front-end, dès Janvier 2025.
+          Je recherche activement un emploi en tant que chef de projet technique / PO. Disponibilité immédiate.
         </p>
       </div>
       <div className="flex justify-center items-center w-full h-full">

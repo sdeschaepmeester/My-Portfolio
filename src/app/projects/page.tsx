@@ -7,6 +7,18 @@ export default function Projects() {
       status: "Terminé",
     },
     {
+      title: "HangeulGo",
+      description: "Application mobile pour apprendre le coréen.",
+      image: "/hangeulgo_img.png",
+      status: "Terminé",
+    },
+    {
+      title: "GrowthGuardian",
+      description: "Application mobile de suivi des arrosages des plantes.",
+      image: "/growthguardian_img.png",
+      status: "En cours",
+    },
+    {
       title: "Jeu mobile",
       description: "Jeu mobile réalisé avec React Native, TypeScript, et Redux.",
       image: "/mdf_img.png",
@@ -27,13 +39,13 @@ export default function Projects() {
   };
 
   return (
-    <div className="h-[calc(100vh-64px)] bg-gray-100 overflow-hidden flex flex-col">
-      <div className="max-w-6xl mx-auto flex-grow overflow-auto">
-        <h1 className="text-3xl md:text-4xl font-bold text-center mb-6 mt-8 text-[#705949]">Mes Projets</h1>
+    <div className="min-h-[calc(100vh-64px)] bg-gray-100 flex flex-col overflow-hidden">
+      <div className="max-w-6xl w-full mx-auto px-4 py-8 flex-grow overflow-hidden">
+        <h1 className="text-3xl md:text-4xl font-bold text-center mb-6 text-[#705949]">Mes Projets</h1>
         <p className="text-center text-gray-600 mb-8 text-sm md:text-base">
           Ci-dessous les projets personnels sur lesquels j&apos;ai travaillé ou travaille actuellement.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 overflow-hidden">
           {projects.map((project, index) => (
             <div
               key={index}
