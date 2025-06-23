@@ -1,22 +1,17 @@
-"use client";
-import { useState } from "react";
-import CursorEffect from './components/CursorEffect';
-import HoverText from './components/HoverText';
-import Header from './components/Header';
+import MainLayout from "./layout/MainLayout";
+import FullPageSections from "./components/sections/FullPageSections";
+import HomeSection from "./components/sections/HomeSection";
+import Presentation from "./presentation/page";
+import CV from "./cv/page";
 
 export default function Home() {
-  const [hoverText, setHoverText] = useState("");
-
   return (
-    <div className="overflow-hidden">
-      <CursorEffect />
-      <Header setHoverText={setHoverText} />
-      <div
-        className="relative w-full h-[calc(100vh-64px)] bg-cover bg-center"
-        style={{ backgroundImage: `url('/background.png')` }}
-      >
-        <HoverText hoverText={hoverText} />
-      </div>
-    </div>
+    <MainLayout scrollable={false}>
+      <FullPageSections>
+        <HomeSection />
+        <Presentation />
+        <CV />
+      </FullPageSections>
+    </MainLayout>
   );
 }

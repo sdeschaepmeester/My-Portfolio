@@ -38,7 +38,7 @@ export default function Presentation() {
     ];
 
     return (
-        <div className="snap-y snap-mandatory h-[calc(100vh-64px)] overflow-y-scroll hide-scrollbar">
+        <div className="snap-y snap-mandatory h-screen overflow-y-scroll hide-scrollbar">
             {/* About me */}
             <section
                 className="snap-start min-h-screen bg-cover bg-center flex items-center"
