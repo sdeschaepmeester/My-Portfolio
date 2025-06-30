@@ -12,24 +12,24 @@ export default function Projects() {
       image: "/hangeulgo_img.png",
       status: "Terminé",
     },
-    {
-      title: "GrowthGuardian",
-      description: "Application mobile de suivi des arrosages des plantes.",
-      image: "/growthguardian_img.png",
-      status: "En cours",
-    },
+    // {
+    //   title: "GrowthGuardian",
+    //   description: "Application mobile de suivi des arrosages des plantes.",
+    //   image: "/growthguardian_img.png",
+    //   status: "En cours",
+    // },
     {
       title: "Jeu mobile",
       description: "Jeu mobile réalisé avec React Native, TypeScript, et Redux.",
       image: "/mdf_img.png",
       status: "En cours",
     },
-    {
-      title: "Tamagotchi",
-      description: "Projet à réaliser avec des éléments Raspberry Pi.",
-      image: "/tamagotchi_img.jpeg",
-      status: "Non commencé",
-    },
+    // {
+    //   title: "Tamagotchi",
+    //   description: "Projet à réaliser avec des éléments Raspberry Pi.",
+    //   image: "/tamagotchi_img.jpeg",
+    //   status: "Non commencé",
+    // },
   ];
 
   const statusColors: Record<"Terminé" | "En cours" | "Non commencé", string> = {
@@ -41,7 +41,7 @@ export default function Projects() {
   return (
     <div className="min-h-[calc(100vh-64px)] bg-gray-100 flex flex-col overflow-hidden">
       <div className="max-w-6xl w-full mx-auto px-4 py-8 flex-grow overflow-hidden">
-        <h1 className="text-3xl md:text-4xl font-bold text-center mb-6 text-[#705949]">Mes Projets</h1>
+        <h1 className="text-3xl md:text-4xl font-bold text-center mb-6 text-primary">Mes Projets</h1>
         <p className="text-center text-gray-600 mb-8 text-sm md:text-base">
           Ci-dessous les projets personnels sur lesquels j&apos;ai travaillé ou travaille actuellement.
         </p>
