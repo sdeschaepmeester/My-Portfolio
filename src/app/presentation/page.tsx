@@ -1,8 +1,8 @@
 "use client";
 
-import { Swiper, SwiperSlide } from "swiper/react";
+//import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Autoplay } from "swiper/modules";
+//import { Autoplay } from "swiper/modules";
 import { FaCogs, FaCode, FaPalette, FaMobileAlt, FaBullseye, FaHandRock, FaFolder } from "react-icons/fa";
 
 export default function Presentation() {
@@ -27,15 +27,15 @@ export default function Presentation() {
         { year: "2018-2020", title: "BTS Services informatique aux organisations", school: "Lycée Jean Jacques Rousseau" },
     ];
 
-    const hobbies = [
-        { src: "/hobby_plants4.jpg", alt: "Plante 4" },
-        { src: "/hobby_art3.jpg", alt: "Art 3" },
-        { src: "/hobby_art1.jpg", alt: "Art 1" },
-        { src: "/hobby_plants1.jpg", alt: "Plante 1" },
-        { src: "/hobby_plants2.jpg", alt: "Plante 2" },
-        { src: "/hobby_art2.jpg", alt: "Art 2" },
-        { src: "/hobby_plants3.jpg", alt: "Plante 3" },
-    ];
+    // const hobbies = [
+    //     { src: "/hobby_plants4.jpg", alt: "Plante 4" },
+    //     { src: "/hobby_art3.jpg", alt: "Art 3" },
+    //     { src: "/hobby_art1.jpg", alt: "Art 1" },
+    //     { src: "/hobby_plants1.jpg", alt: "Plante 1" },
+    //     { src: "/hobby_plants2.jpg", alt: "Plante 2" },
+    //     { src: "/hobby_art2.jpg", alt: "Art 2" },
+    //     { src: "/hobby_plants3.jpg", alt: "Plante 3" },
+    // ];
 
     return (
         <div className="snap-y snap-mandatory h-screen overflow-y-scroll hide-scrollbar">

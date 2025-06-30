@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { HiOutlineDownload } from "react-icons/hi";
 import CustomButton from "../components/buttons/CustomButton";
 
