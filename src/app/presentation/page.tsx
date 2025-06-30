@@ -40,7 +40,7 @@ export default function Presentation() {
     return (
         <div className="snap-y snap-mandatory h-screen overflow-y-scroll hide-scrollbar">
             {/* About me */}
-            <section
+            {/* <section
                 className="snap-start min-h-screen bg-cover bg-center flex items-center"
                 style={{ backgroundImage: "url('/presentation.png')" }}
             >
@@ -55,12 +55,12 @@ export default function Presentation() {
                         Je considère le développement comme un art qui demande patience, compétences et créativité de la même manière qu&apos;une peinture ou de la couture.
                     </p>
                 </div>
-            </section>
+            </section> */}
 
             {/* My hobbies */}
-            <section className="snap-start min-h-screen bg-gray-200 py-10 px-4 flex items-center">
+            {/* <section className="snap-start min-h-screen bg-gray-200 py-10 px-4 flex items-center">
                 <div className="max-w-6xl mx-auto">
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#705949] mb-6 sm:mb-8 break-words">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-6 sm:mb-8 break-words">
                         Mes passions en quelques photos
                     </h2>
                     <Swiper
@@ -91,13 +91,13 @@ export default function Presentation() {
                     <div className="swiper-button-next lg:hidden absolute top-1/2 right-4 transform -translate-y-1/2 z-10">
                     </div>
                 </div>
-            </section>
+            </section> */}
 
 
             {/* Formations and technical skills */}
             <section className="snap-start min-h-screen bg-gray-100 py-10 px-4 mb-10 flex items-center">
                 <div className="max-w-6xl mx-auto">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-[#705949] mb-6 sm:mb-8">
+                    <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-6 sm:mb-8">
                         Mes formations et compétences techniques
                     </h2>
                     <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
@@ -108,7 +108,7 @@ export default function Presentation() {
                                 {formations.map((formation, index) => (
                                     <div key={index} className="flex items-center space-x-6 sm:space-x-8">
                                         <div className="relative flex-shrink-0">
-                                            <div className="w-40 sm:w-45 h-8 sm:h-10 bg-[#705949] text-white rounded-full flex items-center justify-center font-bold p-2">
+                                            <div className="w-40 sm:w-45 h-8 sm:h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold p-2">
                                                 {formation.year}
                                             </div>
                                         </div>
@@ -128,7 +128,7 @@ export default function Presentation() {
                                         key={index}
                                         className="flex items-center gap-4 p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
                                     >
-                                        <div className="w-10 sm:w-12 h-10 sm:h-12 bg-[#705949] text-white flex items-center justify-center rounded-full text-lg sm:text-xl md:text-2xl">
+                                        <div className="w-10 sm:w-12 h-10 sm:h-12 bg-primary text-white flex items-center justify-center rounded-full text-lg sm:text-xl md:text-2xl">
                                             {skill.icon}
                                         </div>
                                         <p className="text-gray-700 text-sm sm:text-base font-medium">{skill.label}</p>
@@ -142,7 +142,7 @@ export default function Presentation() {
             {/* General skills */}
             <section className="snap-start h-[calc(100vh-64px)] bg-gray-200 flex items-center">
                 <div className="max-w-6xl mx-auto">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-[#705949] mb-6 sm:mb-8 mt-6 sm:mt-8 md:mt-0 ml-4 sm:ml-6">
+                    <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-6 sm:mb-8 mt-6 sm:mt-8 md:mt-0 ml-4 sm:ml-6">
                         Compétences générales
                     </h2>
                     <p className="text-sm sm:text-base md:text-lg mb-4 sm:mb-6 mt-4 sm:mt-6 md:mt-0 ml-4 sm:ml-6">
@@ -152,7 +152,7 @@ export default function Presentation() {
                         {skillsGeneral.map((skill, index) => (
                             <div key={index}>
                                 <div className="flex flex-col items-center bg-white rounded-full shadow-md p-4 w-16 sm:w-20 md:w-32 h-16 sm:h-20 md:h-32">
-                                    <div className="flex items-center justify-center text-[#705949] rounded-full w-14 sm:w-16 md:w-32 h-14 sm:h-16 md:h-32 text-2xl sm:text-3xl md:text-6xl">
+                                    <div className="flex items-center justify-center text-primary rounded-full w-14 sm:w-16 md:w-32 h-14 sm:h-16 md:h-32 text-2xl sm:text-3xl md:text-6xl">
                                         {skill.icon}
                                     </div>
                                 </div>
