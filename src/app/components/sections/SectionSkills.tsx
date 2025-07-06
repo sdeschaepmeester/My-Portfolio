@@ -11,7 +11,7 @@ export default function SectionSkills() {
     ];
 
     return (
-        <section className="snap-start h-screen flex items-center justify-center">
+        <section className="snap-start h-screen bg-gradient-to-b from-gray-200 to-white flex items-center justify-center">
             {/* General skills */}
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-6 sm:mb-8 mt-6 sm:mt-8 md:mt-0 ml-4 sm:ml-6">

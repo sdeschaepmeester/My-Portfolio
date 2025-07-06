@@ -3,12 +3,16 @@ import React from "react";
 type Props = {
     children: React.ReactNode;
     className?: string;
+    id?: string;
 };
 
-export default function SectionContent({ children, className }: Props) {
+export default function SectionContent({ children, className, id }: Props) {
     return (
-        <div className={`max-w-6xl w-full mx-auto px-4 py-8 flex flex-col flex-grow ${className || ""}`}>
+        <section
+            id={id}
+            className={`snap-start h-screen max-w-screen w-full mx-auto flex flex-col flex-grow ${className || ""}`}
+        >
             {children}
-        </div>
+        </section>
     );
 }

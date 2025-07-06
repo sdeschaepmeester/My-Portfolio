@@ -13,6 +13,7 @@ const config: Config = {
         foreground: "var(--foreground)",
 
         primary: {
+          lightest: "#a6bed9",
           lighter: "#205188", 
           light: "#144277",
           DEFAULT: "#082E57",

@@ -1,6 +1,4 @@
-import FullPageSections from "./components/sections/FullPageSections";
-import HomeSection from "./components/sections/HomeSection";
-import SectionLayout from "./components/sections/LayoutSection";
+import FullPageSections from "./components/sections/FullPageSection";
 import SectionFormations from "./components/sections/SectionFormations";
 import SectionSkills from "./components/sections/SectionSkills";
 import MainLayout from "./layout/MainLayout";
@@ -8,32 +6,34 @@ import SectionProjects from "./components/sections/SectionProjects";
 import SectionCV from "./components/sections/SectionCV";
 import SectionContact from "./components/sections/SectionContact";
 import SectionPresentation from "./components/sections/SectionPresentation";
+import SectionHero from "./components/sections/SectionHero";
+import SectionContent from "./components/sections/SectionContent";
 
 export default function Home() {
   return (
     <MainLayout scrollable={false}>
       <FullPageSections>
-        <SectionLayout id="home">
-          <HomeSection />
-        </SectionLayout>
-        <SectionLayout id="presentation">
+        <SectionContent id="home">
+          <SectionHero />
+        </SectionContent>
+        <SectionContent id="presentation">
           <SectionPresentation />
-        </SectionLayout>
-        <SectionLayout id="formations">
+        </SectionContent>
+        <SectionContent id="formations">
           <SectionFormations />
-        </SectionLayout>
-        <SectionLayout id="skills">
+        </SectionContent>
+        <SectionContent id="skills">
           <SectionSkills />
-        </SectionLayout>
-        <SectionLayout id="projects">
+        </SectionContent>
+        <SectionContent id="projects">
           <SectionProjects />
-        </SectionLayout>
-        <SectionLayout id="cv">
+        </SectionContent>
+        <SectionContent id="cv">
           <SectionCV />
-        </SectionLayout>
-        <SectionLayout id="contact">
+        </SectionContent>
+        <SectionContent id="contact">
           <SectionContact />
-        </SectionLayout>
+        </SectionContent>
       </FullPageSections>
     </MainLayout>
   );

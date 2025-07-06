@@ -7,7 +7,7 @@ export default function SectionContact() {
 
     return (
         <section className="snap-start h-screen flex items-center justify-center">
-            <div className="h-full bg-gray-100 w-screen flex flex-col justify-center px-4">
+            <div className="h-full bg-white w-screen flex flex-col justify-center px-4">
                 <div className="max-w-6xl mx-auto text-center">
                     <h1 className="text-3xl md:text-4xl font-bold text-primary mb-12">Contactez-moi</h1>
 
