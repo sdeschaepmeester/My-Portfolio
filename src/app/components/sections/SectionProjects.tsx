@@ -1,5 +1,6 @@
-import Title from "../Title";
-import SectionLayout from "../../layout/LayoutSection";
+"use client";
+
+import "swiper/css";
 
 export default function SectionProjects() {
     const projects = [
@@ -30,9 +31,9 @@ export default function SectionProjects() {
     };
 
     return (
-        <SectionLayout>
+        <section className="snap-start h-screen flex items-center justify-center">
             <div className="max-w-6xl w-full mx-auto px-4 py-8 flex-grow overflow-hidden">
-                <Title position="right">Mes Projets</Title>
+                <h1 className="text-3xl md:text-4xl font-bold text-center mb-6 text-primary">Mes Projets</h1>
                 <p className="text-center text-gray-600 mb-8 text-sm md:text-base">
                     Ci-dessous les projets personnels sur lesquels j&apos;ai travaillé ou travaille actuellement.
                 </p>
@@ -60,6 +61,6 @@ export default function SectionProjects() {
                     ))}
                 </div>
             </div>
-        </SectionLayout>
+        </section>
     );
 }

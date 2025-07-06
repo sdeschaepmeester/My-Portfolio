@@ -1,41 +1,55 @@
-import React from 'react';
-import Link from 'next/link';
-import { HiOutlineDocumentText, HiOutlineBriefcase, HiOutlineMail, HiOutlineHome } from 'react-icons/hi';
+import React from "react";
+import { FaHome, FaFileAlt, FaFolderOpen, FaEnvelope } from "react-icons/fa";
 
 export default function NavBar() {
     return (
-        <nav className="w-full h-16 bg-primary-darkest text-white flex items-center justify-between fixed top-0 left-0 z-50 px-8 opacity-90">
-            <Link href="#home" className="text-xl font-bold flex items-center">
-                {/* Big screen */}
-                <span className="hidden md:inline">Portfolio - Samantha Deschaepmeester</span>
-                {/* Medium screen */}
-                <span className="hidden sm:inline md:hidden">Portfolio</span>
-                {/* Small screen */}
-                <HiOutlineHome className="inline sm:hidden w-6 h-6" />
-            </Link>
+        <nav className="w-full h-16 bg-primary-darkest text-white flex items-center justify-between fixed top-0 left-0 z-50 px-6 md:px-8 opacity-90">
 
-            {/* Buttons */}
-            <div className="flex space-x-2 sm:space-x-4">
+            {/* Logo ou titre */}
+            <a href="#home" className="flex items-center space-x-2">
+                {/* Grand écran : titre complet */}
+                <h1 className="hidden lg:block text-xl font-bold">
+                    Portfolio - Samantha Deschaepmeester
+                </h1>
+                {/* Moyen écran : titre court */}
+                <h1 className="hidden md:block lg:hidden text-xl font-bold">
+                    Portfolio
+                </h1>
+                {/* Petit écran : icône home */}
+                <FaHome className="block md:hidden w-6 h-6" />
+            </a>
+
+            {/* Liens */}
+            <div className="flex space-x-4">
+                {/* Grand & moyen écran : boutons texte */}
                 <a
                     href="#cv"
-                    className="px-2 sm:px-3 md:px-4 py-1 sm:py-2 border border-primary-light text-white rounded bg-primary-light hover:bg-primary-lighter transition text-sm sm:text-base flex items-center justify-center"
+                    className="hidden md:inline-block px-4 py-2 border border-primary-light text-white rounded bg-primary-light hover:bg-primary-lighter transition"
                 >
-                    <span className="hidden sm:inline">CV</span>
-                    <HiOutlineDocumentText className="inline sm:hidden w-5 h-5" />
+                    CV
                 </a>
                 <a
                     href="#projects"
-                    className="px-2 sm:px-3 md:px-4 py-1 sm:py-2 border border-primary-light text-white rounded bg-primary-light hover:bg-primary-lighter transition text-sm sm:text-base flex items-center justify-center"
+                    className="hidden md:inline-block px-4 py-2 border border-primary-light bg-primary-light text-white rounded hover:bg-primary-lighter transition"
                 >
-                    <span className="hidden sm:inline">Projets personnels</span>
-                    <HiOutlineBriefcase className="inline sm:hidden w-5 h-5" />
+                    Projets
                 </a>
                 <a
                     href="#contact"
-                    className="px-2 sm:px-3 md:px-4 py-1 sm:py-2 border border-primary-light text-white rounded bg-primary-light hover:bg-primary-lighter transition text-sm sm:text-base flex items-center justify-center"
+                    className="hidden md:inline-block px-4 py-2 border border-primary-light bg-primary-light text-white rounded hover:bg-primary-lighter transition"
                 >
-                    <span className="hidden sm:inline">Me contacter</span>
-                    <HiOutlineMail className="inline sm:hidden w-5 h-5" />
+                    Contact
+                </a>
+
+                {/* Petit écran : icônes */}
+                <a href="#cv" className="block md:hidden">
+                    <FaFileAlt className="w-6 h-6" />
+                </a>
+                <a href="#projects" className="block md:hidden">
+                    <FaFolderOpen className="w-6 h-6" />
+                </a>
+                <a href="#contact" className="block md:hidden">
+                    <FaEnvelope className="w-6 h-6" />
                 </a>
             </div>
         </nav>
