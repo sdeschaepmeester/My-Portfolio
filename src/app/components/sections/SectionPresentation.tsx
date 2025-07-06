@@ -11,9 +11,9 @@ export default function SectionPresentation() {
                 <div className="flex-1 flex flex-col justify-center">
                     <h2 className="text-4xl md:text-5xl font-bold mb-4">Présentation</h2>
                     <p className="text-lg md:text-xl text-gray-700 mb-6">
-                        Bienvenue sur mon portfolio ! Je m'appelle <span className="font-semibold">Samantha</span>,
-                        et je suis une développeuse web & mobile à la recherche d'un CDI. <br />
-                        Après une expérience de 4 ans, j'ai pris goût à la gestion de projet et notamment aux méthodologies agiles.
+                        Bienvenue sur mon portfolio ! Je m&apos;appelle <span className="font-semibold">Samantha</span>,
+                        et je suis une développeuse web &amp; mobile à la recherche d&apos;un CDI. <br />
+                        Après une expérience de 4 ans, j&apos;ai pris goût à la gestion de projet et notamment aux méthodologies agiles.
                         Je recherche une entreprise travaillant dans ce contexte.
                     </p>
                 </div>
