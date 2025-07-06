@@ -1,12 +1,13 @@
 import FullPageSections from "./components/sections/FullPageSections";
 import HomeSection from "./components/sections/HomeSection";
 import SectionLayout from "./components/sections/LayoutSection";
-import Contact from "./contact/page";
-import CV from "./cv/page";
+import SectionFormations from "./components/sections/SectionFormations";
+import SectionSkills from "./components/sections/SectionSkills";
 import MainLayout from "./layout/MainLayout";
-import Presentation from "./presentation/page";
-import Projects from "./projects/page";
-import Skills from "./skills/page";
+import SectionProjects from "./components/sections/SectionProjects";
+import SectionCV from "./components/sections/SectionCV";
+import SectionContact from "./components/sections/SectionContact";
+import SectionPresentation from "./components/sections/SectionPresentation";
 
 export default function Home() {
   return (
@@ -16,19 +17,22 @@ export default function Home() {
           <HomeSection />
         </SectionLayout>
         <SectionLayout id="presentation">
-          <Presentation />
+          <SectionPresentation />
         </SectionLayout>
-        <SectionLayout id="projects">
-          <Projects />
+        <SectionLayout id="formations">
+          <SectionFormations />
         </SectionLayout>
         <SectionLayout id="skills">
-          <Skills />
+          <SectionSkills />
+        </SectionLayout>
+        <SectionLayout id="projects">
+          <SectionProjects />
         </SectionLayout>
         <SectionLayout id="cv">
-          <CV />
+          <SectionCV />
         </SectionLayout>
         <SectionLayout id="contact">
-          <Contact />
+          <SectionContact />
         </SectionLayout>
       </FullPageSections>
     </MainLayout>
