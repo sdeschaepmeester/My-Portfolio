@@ -19,7 +19,7 @@ const config: Config = {
           DEFAULT: "#082E57",
           dark: "#031D39",
           darker: "#00132A",
-          darkest: "#08121d"
+          darkest: "#06031c"
         },
         secondary: {
           lighter: "#727A97", 
