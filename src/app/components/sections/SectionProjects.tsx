@@ -5,7 +5,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { FaReact, FaDocker, FaGithub, FaPython, FaAndroid, FaPaintBrush, } from "react-icons/fa";
-import { SiExpo, SiTypescript, SiTailwindcss, SiRender, SiNextdotjs, } from "react-icons/si";
+import { SiExpo, SiTypescript, SiTailwindcss, SiRender, SiNextdotjs, SiVercel, } from "react-icons/si";
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
 import { JSX } from "react";
@@ -25,6 +25,7 @@ const techIcons: Record<string, JSX.Element> = {
     piskel: <FaPaintBrush />,
     next: <SiNextdotjs />,
     "play store": <FaAndroid />,
+    vercel: <SiVercel />,
 };
 
 const projects = [
@@ -67,6 +68,7 @@ const projects = [
         techs: [
             { label: "Next", iconKey: "next" },
             { label: "TypeScript", iconKey: "typescript" },
+            { label: "Vercel", iconKey: "vercel" }
         ],
     },
     {
