@@ -15,7 +15,7 @@ export default function SectionPresentation() {
                         <br /><br />
                         Mes compétences principales incluent le développement front-end (typescript avec React et Next), le développement mobile hybride et le travail en agilité (Scrum, Kanban).
                         <br /><br />
-                        Je suis à la recherche d&apos;un poste en CDI au sein d&apos;une entreprise qui valorise les méthodes agiles, le travail en équipe et l&apos;autonomie. N'hésitez pas à me contacter pour discuter de vos projets ou de collaborations potentielles.
+                        Je suis à la recherche d&apos;un poste en CDI au sein d&apos;une entreprise qui valorise les méthodes agiles, le travail en équipe et l&apos;autonomie. N&apos;hésitez pas à me contacter pour discuter de vos projets ou de collaborations potentielles.
                     </p>
                 </div>
 
