@@ -11,10 +11,11 @@ export default function SectionPresentation() {
                 <div className="flex-1 flex flex-col justify-center">
                     <h2 className="text-4xl md:text-5xl font-bold mb-4">Présentation</h2>
                     <p className="text-lg md:text-xl text-gray-700 mb-6">
-                        Bienvenue sur mon portfolio ! Je m&apos;appelle <span className="font-semibold">Samantha</span>,
-                        et je suis une développeuse web &amp; mobile à la recherche d&apos;un CDI. <br />
-                        Après une expérience de 4 ans, j&apos;ai pris goût à la gestion de projet et notamment aux méthodologies agiles.
-                        Je recherche une entreprise travaillant dans ce contexte.
+                        Après quatre années d&apos;expérience en tant que développeuse web et mobile, j&apos;ai eu l&apos;opportunité d&apos;intervenir aussi bien sur la partie technique que sur la gestion de projet.
+                        <br /><br />
+                        Mes compétences principales incluent le développement front-end (typescript avec React et Next), le développement mobile hybride et le travail en agilité (Scrum, Kanban).
+                        <br /><br />
+                        Je suis à la recherche d&apos;un poste en CDI au sein d&apos;une entreprise qui valorise les méthodes agiles, le travail en équipe et l&apos;autonomie. N'hésitez pas à me contacter pour discuter de vos projets ou de collaborations potentielles.
                     </p>
                 </div>
 

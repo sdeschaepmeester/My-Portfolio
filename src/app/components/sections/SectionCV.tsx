@@ -14,13 +14,13 @@ export default function SectionCV() {
                     <div className="flex-1 text-center md:text-left">
                         <h1 className="text-4xl font-bold mb-4 text-primary">Mon CV</h1>
                         <p className="text-gray-600 mb-6">
-                            Je recherche activement un emploi en tant que chef de projet technique / PO.
+                            Je recherche activement un emploi en tant que développeuse fullstack.
                             Disponibilité immédiate.
                         </p>
                         <CustomButton
                             label="Télécharger mon CV"
                             type="primary"
-                            href="/CV_Deschaepmeester_Samantha.pdf"
+                            href="/CV_Samantha_Deschaepmeester.pdf"
                             icon={<HiOutlineDownload className="w-5 h-5" />}
                         />
                     </div>

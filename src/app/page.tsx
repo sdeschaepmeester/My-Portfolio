@@ -19,14 +19,14 @@ export default function Home() {
         <SectionContent id="presentation">
           <SectionPresentation />
         </SectionContent>
+        <SectionContent id="projects">
+          <SectionProjects />
+        </SectionContent>
         <SectionContent id="formations">
           <SectionFormations />
         </SectionContent>
         <SectionContent id="skills">
           <SectionSkills />
-        </SectionContent>
-        <SectionContent id="projects">
-          <SectionProjects />
         </SectionContent>
         <SectionContent id="cv">
           <SectionCV />
