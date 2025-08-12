@@ -13,15 +13,15 @@ export default function SectionPresentation() {
                         Présentation
                     </h2>
                     <p className="text-sm sm:text-base md:text-xl text-gray-700 mb-6">
-                        Après quatre années d'expérience en tant que développeuse web et mobile,
-                        j'ai eu l'opportunité d'intervenir aussi bien sur la partie technique que
+                        Après quatre années d&apos;expérience en tant que développeuse web et mobile,
+                        j&apos;ai eu l&apos;opportunité d&apos;intervenir aussi bien sur la partie technique que
                         sur la gestion de projet.
                         <br /><br />
                         Mes compétences principales incluent le développement front-end (typescript avec React et Next),
                         le développement mobile hybride et le travail en agilité (Scrum, Kanban).
                         <br /><br />
-                        Je suis à la recherche d'un poste en CDI au sein d'une entreprise qui valorise les méthodes agiles,
-                        le travail en équipe et l'autonomie. N'hésitez pas à me contacter pour discuter de vos projets ou
+                        Je suis à la recherche d&apos;un poste en CDI au sein d&apos;une entreprise qui valorise les méthodes agiles,
+                        le travail en équipe et l&apos;autonomie. N&apos;hésitez pas à me contacter pour discuter de vos projets ou
                         de collaborations potentielles.
                     </p>
                 </div>

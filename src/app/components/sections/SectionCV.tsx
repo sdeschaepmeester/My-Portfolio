@@ -70,34 +70,18 @@ export default function SectionCV() {
                     {/*-------------- Right section: CV viewer --------------*/}
                     <div className="flex-1 w-full flex justify-center">
                         <div className="h-[80vh] w-full border border-gray-300 shadow-lg bg-white overflow-hidden rounded-lg">
-                            {/* Affiche le PDF si possible (zoom/controls du navigateur) */}
+                            {/* PDF Viewer */}
                             <object
                                 data="/CV_Samantha_Deschaepmeester.pdf#view=FitH"
                                 type="application/pdf"
                                 className="h-full w-full"
                             >
-                                {/* Fallback : iframe (certains navigateurs) */}
+                                {/* Fallback : iframe */}
                                 <iframe
                                     src="/CV_Samantha_Deschaepmeester.pdf#view=FitH"
                                     className="h-full w-full"
                                     title="CV PDF"
                                 />
-                                {/* Fallback final : PNG + lien d'ouverture */}
-                                <div className="h-full w-full flex flex-col items-center justify-center p-4">
-                                    <img
-                                        src="/cv.png"
-                                        alt="CV"
-                                        className="max-h-full max-w-full object-contain mb-4"
-                                    />
-                                    <CustomButton
-                                        href="/CV_Samantha_Deschaepmeester.pdf#page=1&zoom=page-width"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        variant="secondary"
-                                    >
-                                        Ouvrir le PDF dans un nouvel onglet
-                                    </CustomButton>
-                                </div>
                             </object>
                         </div>
                     </div>
