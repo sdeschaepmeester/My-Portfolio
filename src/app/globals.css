@@ -28,35 +28,60 @@ body {
   /* Firefox */
 }
 
-/* Hide scroolbar (Chrome, Safari, Edge Chromium) */
 .hide-scrollbar::-webkit-scrollbar {
+  /* Chrome, Safari, Edge Chromium */
   display: none;
 }
 
+/* =========================
+   Swiper Navigation Arrows
+   ========================= */
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev::after,
+.swiper .swiper-button-next::after {
+  color: #ffffff !important;
+  transition: color .2s ease;
+}
+
+.swiper .swiper-button-prev:hover,
+.swiper .swiper-button-next:hover,
+.swiper .swiper-button-prev:hover::after,
+.swiper .swiper-button-next:hover::after {
+  color: #EC874A !important;
+}
+
+.swiper .swiper-button-disabled {
+  opacity: .35 !important;
+  pointer-events: none;
+}
+
+/* ======== Mobile overrides ======== */
 @media (max-width: 768px) {
 
+  /* Hide arrows on mobile */
   .swiper-button-prev,
   .swiper-button-next {
-    top: 70px !important;
-    transform: translateY(0);
-    width: 30px;
-    height: 30px;
+    display: none !important;
   }
 
-  .swiper-button-prev {
-    left: 10px !important;
+  .swiper .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
   }
 
-  .swiper-button-next {
-    right: 10px !important;
+  .swiper .swiper-pagination-bullet-active {
+    transform: scale(1.1);
   }
 
-  .swiper-button-prev::after,
-  .swiper-button-next::after {
-    font-size: 20px !important;
+  .swiper-pagination {
+    bottom: 72px !important;
   }
 }
 
+/* =================
+   Pagination (base)
+   ================= */
 .swiper .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
@@ -74,10 +99,4 @@ body {
 .swiper-pagination {
   bottom: 16px !important;
   z-index: 30;
-}
-
-@media (max-width: 768px) {
-  .swiper-pagination {
-    bottom: 80px !important;
-  }
 }
