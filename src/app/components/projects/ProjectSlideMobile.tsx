@@ -15,15 +15,19 @@ type Props = {
 export default function ProjectSlideMobile({ project, statusColors, techIcons }: Props) {
     return (
         <>
-            <div className="h-full w-full flex flex-col items-center justify-center gap-4 px-2 pb-28">
-                <div className="w-[90vw] max-w-[500px] aspect-[16/9]">
+            {/* Fixed top image (100% width, 40vh height) */}
+            <div className="fixed inset-x-0 top-0 z-30 px-2 pt-[calc(env(safe-area-inset-top)+12px)]">
+                <div className="w-full h-[40vh] overflow-hidden rounded-xl shadow-md">
                     <img
                         src={project.image}
                         alt={project.title}
-                        className="w-full h-full object-cover rounded-xl shadow-md"
+                        className="w-full h-full object-cover object-center"
                     />
                 </div>
+            </div>
 
+            {/* Main content starts below the fixed image */}
+            <div className="h-full w-full flex flex-col items-center justify-start gap-4 px-2 pb-28 pt-[calc(40vh+24px)]">
                 {/* Title + status */}
                 <div className="w-full flex items-center justify-between gap-2 flex-wrap">
                     <h2 className="flex-1 min-w-0 text-[clamp(1.05rem,5.2vw,1.35rem)] font-bold leading-tight text-left">
@@ -77,10 +81,11 @@ export default function ProjectSlideMobile({ project, statusColors, techIcons }:
                 </div>
             </div>
 
+            {/* Floating CTA */}
             <div className="fixed left-0 right-0 bottom-4 z-40 px-4">
                 <div className="bg-primary-dark/70 backdrop-blur rounded-xl p-2 shadow-lg">
                     {project.title === "Mon portfolio" ? (
-                        <p className="w-full py-3 text-center bg-gray-800 text-white rounded font-semibold">
+                        <p className="mb-16 w-full py-3 text-center bg-gray-800 text-white rounded font-semibold">
                             Vous êtes ici 😉
                         </p>
                     ) : (
@@ -94,6 +99,7 @@ export default function ProjectSlideMobile({ project, statusColors, techIcons }:
                             fullWidth
                             variant="primary"
                             aria-disabled={project.clickable ? undefined : true}
+                            style={{marginBottom: 16}}
                         >
                             {project.id === "frs" ? "POC en cours" : "Voir le projet"}
                         </CustomButton>
