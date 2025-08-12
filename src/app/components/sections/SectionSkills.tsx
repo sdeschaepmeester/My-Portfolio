@@ -14,7 +14,7 @@ export default function SectionSkills() {
         <section className="snap-start h-screen bg-gradient-to-b from-primary-darker to-primary-dark flex items-center justify-center">
             {/* General skills */}
                 <div className="max-w-6xl mx-auto">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-primary-lighter mb-6 sm:mb-8 mt-6 sm:mt-8 md:mt-0 ml-4 sm:ml-6">
+                    <h2 className="text-3xl sm:text-4xl font-bold text-neutral-lighter mb-6 sm:mb-8 mt-6 sm:mt-8 md:mt-0 ml-4 sm:ml-6 text-center">
                         Compétences générales
                     </h2>
                     <p className="text-primary-lightest text-sm sm:text-base md:text-lg mb-4 sm:mb-6 mt-4 sm:mt-6 md:mt-0 ml-4 sm:ml-6">

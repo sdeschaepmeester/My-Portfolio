@@ -22,11 +22,11 @@ const config: Config = {
           darkest: "#06031c"
         },
         secondary: {
-          lighter: "#727A97", 
-          light: "#4E5675", 
-          DEFAULT: "#374066", 
-          dark: "#252C4F",
-          darker: "#151A34",
+          lighter: "#E2B19C", 
+          light: "#ee9d6bff", 
+          DEFAULT: "#EC874A", 
+          dark: "#c06006ff",
+          darker: "#884a04ff",
         },
         neutral: {
           lighter: "#ffffff",

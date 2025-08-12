@@ -33,14 +33,51 @@ body {
   display: none;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  color: white!important;
-  background-color: transparent!important;
-  font-size: 3rem;
+@media (max-width: 768px) {
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 70px !important;
+    transform: translateY(0);
+    width: 30px;
+    height: 30px;
+  }
+
+  .swiper-button-prev {
+    left: 10px !important;
+  }
+
+  .swiper-button-next {
+    right: 10px !important;
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 20px !important;
+  }
 }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  color: #d3d3d3!important;
+.swiper .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #ffffff !important;
+  opacity: 0.6 !important;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background: #EC874A !important;
+  opacity: 1 !important;
+  transform: scale(1.2);
+}
+
+.swiper-pagination {
+  bottom: 16px !important;
+  z-index: 30;
+}
+
+@media (max-width: 768px) {
+  .swiper-pagination {
+    bottom: 80px !important;
+  }
 }

@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import { FaHome, FaFileAlt, FaFolderOpen, FaEnvelope } from "react-icons/fa";
+import CustomButton from "./buttons/CustomButton";
 
 export default function NavBar() {
     return (
@@ -17,28 +19,30 @@ export default function NavBar() {
                 <FaHome className="block md:hidden w-6 h-6" />
             </a>
 
-            {/* Links */}
+            {/* ------------------------ Links ------------------------ */}
             <div className="flex space-x-4">
                 {/* Big and medium screens */}
-                <a
+                <CustomButton
                     href="#projects"
-                    className="hidden md:inline-block px-4 py-2 border border-primary-light bg-primary-light text-white rounded hover:bg-primary-lighter transition"
+                    variant="primary"
+                    className="hidden md:inline-block"
                 >
                     Mes réalisations
-                </a>
-                <a
+                </CustomButton>
+                <CustomButton
                     href="#cv"
-                    className="hidden md:inline-block px-4 py-2 border border-primary-light text-white rounded bg-primary-light hover:bg-primary-lighter transition"
+                    variant="primary"
+                    className="hidden md:inline-block"
                 >
                     CV
-                </a>
-                <a
+                </CustomButton>
+                <CustomButton
                     href="#contact"
-                    className="hidden md:inline-block px-4 py-2 border border-primary-light bg-primary-light text-white rounded hover:bg-primary-lighter transition"
+                    variant="primary"
+                    className="hidden md:inline-block"
                 >
                     Me contacter
-                </a>
-
+                </CustomButton>
                 {/* Small screens */}
                 <a href="#projects" className="block md:hidden">
                     <FaFolderOpen className="w-6 h-6" />
