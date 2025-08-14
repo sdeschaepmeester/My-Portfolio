@@ -11,7 +11,7 @@ export default function SectionPresentation() {
 
                     {/* ------------------------ Left section (75%) ------------------------ */}
                     <div className="w-full md:basis-3/4 flex flex-col justify-center items-center md:items-start rounded-md md:rounded-none p-4 sm:p-6 md:p-8">
-                        <h2 className="font-bold mb-4 text-center md:text-left text-[clamp(1.5rem,3.5vw,2.75rem)]">
+                        <h2 className="text-primary-darker font-bold mb-4 text-center md:text-left text-[clamp(1.5rem,3.5vw,2.75rem)]">
                             Présentation
                         </h2>
                         <p className="w-full text-gray-700 text-center md:text-left text-[clamp(0.95rem,1.4vw,1.15rem)] leading-relaxed">
