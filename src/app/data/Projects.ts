@@ -18,6 +18,26 @@ const projects: Project[] = [
         ],
     },
     {
+        id: "dpg",
+        title: "DovePigeonGuide",
+        clickable: true,
+        description:
+            "Une plateforme d'articles sur l'élevage des colombes et tourterelles. Chaque article subit une revue avant d'être publié sur la plateforme. Design canva en lien.",
+        image: "/projects/project_pdg.webp",
+        status: "En cours",
+        link: "https://www.canva.com/design/DAGxb8BMbrU/qO7WimXQ2DHic9EaELHV1Q/edit?utm_content=DAGxb8BMbrU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+        techs: [
+            { label: "Next", iconKey: "next", description: "Framework Next suivant la stack T3" },
+            { label: "Resend", iconKey: "resend", description: "Réception et envoie d'emails automatique" },
+            { label: "Prisma", iconKey: "prisma", description: "Base de données Next" },
+            { label: "i18n", iconKey: "i18n", description: "Gestion des traductions" },
+            { label: "TypeScript", iconKey: "typescript", description: "TypeScript" },
+            { label: "CI/CD Github Actions", iconKey: "cicd", description: "Intégration continue et déploiement continu" },
+            { label: "Docker", iconKey: "docker", description: "Conteneurisation des applications" },
+            { label: "Vercel", iconKey: "vercel", description: "Hébergement de l'application" },
+        ],
+    },
+    {
         id: "frs",
         title: "FullRemoteSeekers",
         clickable: false,
