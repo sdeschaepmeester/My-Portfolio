@@ -18,6 +18,22 @@ const projects: Project[] = [
         ],
     },
     {
+        id: "dsa",
+        title: "Drone Sud Activités",
+        clickable: true,
+        description:
+            "Drone Sud Activités est un site web vitrine pour une entreprise de services par drone. Le site présente les services offerts, des exemples d'interventions et un formulaire de contact pour les devis et autres demandes.",
+        image: "/projects/project_dsa.webp",
+        status: "Terminé",
+        link: "https://www.drone-sud-activités.fr/",
+        techs: [
+            { label: "NextJS", iconKey: "next", description: "Framework NextJS, pour l'amélioration du référencement." },
+            { label: "TypeScript", iconKey: "typescript", description: "TypeScript" },
+            { label: "Resend", iconKey: "email", description: "Service d'emails" },
+            { label: "Vercel", iconKey: "vercel", description: "Déploiement automatique de l'application" },
+        ],
+    },
+    {
         id: "dpg",
         title: "DovePigeonGuide",
         clickable: true,
