@@ -30,7 +30,22 @@ const projects: Project[] = [
             { label: "NextJS", iconKey: "next", description: "Framework NextJS, pour l'amélioration du référencement." },
             { label: "TypeScript", iconKey: "typescript", description: "TypeScript" },
             { label: "Resend", iconKey: "email", description: "Service d'emails" },
-            { label: "Vercel", iconKey: "vercel", description: "Déploiement automatique de l'application" },
+        ],
+    },
+    {
+        id: "ca",
+        title: "Cycle Harmony",
+        clickable: true,
+        description:
+            "CycleHarmony est un site web vitrine pour une auto-entrepreneuse experte en symptothermie. Le site présente ce qu'est la symptothermie, les différents packs de service et un formulaire de contact pour prise de rendez-vous.",
+        image: "/projects/project_ca.webp",
+        status: "Terminé",
+        link: "https://cycleharmony.vercel.app/",
+        techs: [
+            { label: "ReactJS", iconKey: "react", description: "Framework NextJS, pour l'amélioration du référencement." },
+            { label: "TypeScript", iconKey: "typescript", description: "TypeScript" },
+            { label: "Resend", iconKey: "email", description: "Service d'emails" },
+            { label: "Cloudflare", iconKey: "cloudflare", description: "Déploiement automatique de l'application" },
         ],
     },
     {
@@ -60,7 +75,7 @@ const projects: Project[] = [
         description:
             "FullRemoteSeekers est une plateforme de recherche d'emploi 100% remote, en cours de développement.",
         image: "/projects/project_frs.webp",
-        status: "En cours",
+        status: "En pause",
         link: "http://fullremoteseekers.com/",
         techs: [
             { label: "FastAPI (Python)", iconKey: "fastapi", description: "Framework Python pour les APIs" },

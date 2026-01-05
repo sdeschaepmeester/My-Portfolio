@@ -1,4 +1,4 @@
-export type ProjectStatus = "Terminé" | "En cours" | "Non commencé";
+export type ProjectStatus = "Terminé" | "En cours" | "Non commencé" | "En pause";
 
 export type Tech = {
     label: string;

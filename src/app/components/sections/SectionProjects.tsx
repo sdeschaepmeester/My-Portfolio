@@ -39,6 +39,7 @@ const techIcons: Record<string, JSX.Element> = {
 const statusColors: Record<ProjectStatus, string> = {
     Terminé: "bg-green-600",
     "En cours": "bg-yellow-500",
+    "En pause": "bg-yellow-500",
     "Non commencé": "bg-gray-400",
 };
 
