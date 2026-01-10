@@ -42,10 +42,26 @@ const projects: Project[] = [
         status: "Terminé",
         link: "https://cycleharmony.vercel.app/",
         techs: [
-            { label: "ReactJS", iconKey: "react", description: "Framework NextJS, pour l'amélioration du référencement." },
+            { label: "ReactJS", iconKey: "react", description: "Framework React TypeScript." },
             { label: "TypeScript", iconKey: "typescript", description: "TypeScript" },
             { label: "Resend", iconKey: "email", description: "Service d'emails" },
             { label: "Cloudflare", iconKey: "cloudflare", description: "Déploiement automatique de l'application" },
+        ],
+    },
+    {
+        id: "nhp",
+        title: "Portfolio - Artisan en rénovation intérieur",
+        clickable: true,
+        description:
+            "Site vitrine d'un artisan polyvalent en rénovation intérieure. Le site présente les domaines d'interventions, des exemples de réalisations et un formulaire de prise de contact.",
+        image: "/projects/project_nhp.webp",
+        status: "Terminé",
+        link: "https://nolhanhenriquesportfolio.vercel.app/",
+        techs: [
+            { label: "Next", iconKey: "next", description: "Framework NextJS." },
+            { label: "TypeScript", iconKey: "typescript", description: "TypeScript" },
+            { label: "Resend", iconKey: "email", description: "Service d'emails" },
+            { label: "Vercel", iconKey: "vercel", description: "Déploiement automatique de l'application" },
         ],
     },
     {
