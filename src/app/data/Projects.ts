@@ -56,7 +56,7 @@ const projects: Project[] = [
             "Site vitrine d'un artisan polyvalent en rénovation intérieure. Le site présente les domaines d'interventions, des exemples de réalisations et un formulaire de prise de contact.",
         image: "/projects/project_nhp.webp",
         status: "Terminé",
-        link: "https://nolhanhenriquesportfolio.vercel.app/",
+        link: "https://dsa-multiservices.vercel.app/",
         techs: [
             { label: "Next", iconKey: "next", description: "Framework NextJS." },
             { label: "TypeScript", iconKey: "typescript", description: "TypeScript" },
