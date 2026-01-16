@@ -38,7 +38,7 @@ const projects: Project[] = [
         clickable: true,
         description:
             "CycleHarmony est un site web vitrine pour une auto-entrepreneuse experte en symptothermie. Le site présente ce qu'est la symptothermie, les différents packs de service et un formulaire de contact pour prise de rendez-vous.",
-        image: "/projects/project_ca.webp",
+        image: "/projects/project_ch.webp",
         status: "Terminé",
         link: "https://cycleharmony.vercel.app/",
         techs: [
@@ -65,12 +65,26 @@ const projects: Project[] = [
         ],
     },
     {
+        id: "vi",
+        title: "Vista - Peluche robotique",
+        clickable: true,
+        description:
+            "Jeu mobile réalisé en Kotlin, lié à une peluche robotique via Bluetooth BLE. Les actions du joueur sur l'application font bouger la peluche (pattes avant et queue). Le système embarqué de la peluche est fait avec des composants Arduino.",
+        image: "/projects/project_vi.webp",
+        status: "En cours",
+        link: "",
+        techs: [
+            { label: "Arduino", iconKey: "arduino", description: "Composants électroniques" },
+            { label: "Kotlin", iconKey: "kotlin", description: "Application mobile Android" },
+        ],
+    },
+    {
         id: "dpg",
         title: "DovePigeonGuide",
         clickable: true,
         description:
             "Une plateforme d'articles sur l'élevage des colombes et tourterelles. Chaque article subit une revue avant d'être publié sur la plateforme. Design canva en lien.",
-        image: "/projects/project_pdg.webp",
+        image: "/projects/project_dpg.webp",
         status: "En cours",
         link: "https://www.canva.com/design/DAGxb8BMbrU/qO7WimXQ2DHic9EaELHV1Q/edit?utm_content=DAGxb8BMbrU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
         techs: [
