@@ -7,7 +7,7 @@ const projects: Project[] = [
         clickable: true,
         description:
             "HangeulGo est une application mobile pour apprendre le coréen à l'aide de jeux et de quiz. Remplissez votre lexique et testez vos connaissances dans des jeux customisables ! L'application est disponible gratuitement sur le Play Store.",
-        image: "/projects/hg_cover.png",
+        image: "/projects/hg_cover.webp",
         status: "Terminé",
         link: "https://play.google.com/store/apps/details?id=com.sdeschaepmeester.hangeulgo",
         techs: [
@@ -23,7 +23,7 @@ const projects: Project[] = [
         clickable: true,
         description:
             "Drone Sud Activités est un site web vitrine pour une entreprise de services de nettoyage par drone. Le site présente les services offerts, des exemples d'interventions et un formulaire de contact pour les devis et autres demandes.",
-        image: "/projects/dsa_cover.png",
+        image: "/projects/dsa_cover.webp",
         status: "Terminé",
         link: "https://www.drone-sud-activités.fr/",
         techs: [
@@ -38,7 +38,7 @@ const projects: Project[] = [
         clickable: false,
         description:
             "Outil de prospection B2B permettant d’identifier des entreprises à partir de données publiques selon des critères géographiques et sectoriels.",
-        image: "/projects/cf_cover.png",
+        image: "/projects/cf_cover.webp",
         status: "Terminé",
         link: "",
         techs: [
@@ -55,7 +55,7 @@ const projects: Project[] = [
         clickable: true,
         description:
             "CycleHarmony est un site web vitrine pour une auto-entrepreneuse experte en symptothermie, une méthode de contraception naturelle. Le site présente ce qu'est la symptothermie, les différents packs de service et un formulaire de contact pour prise de rendez-vous.",
-        image: "/projects/ch_cover.png",
+        image: "/projects/ch_cover.webp",
         status: "Terminé",
         link: "https://cycleharmony.vercel.app/",
         techs: [
@@ -71,7 +71,7 @@ const projects: Project[] = [
         clickable: true,
         description:
             "Site vitrine d'un artisan polyvalent en rénovation intérieure. Le site présente les domaines d'interventions, des exemples de réalisations et un formulaire de prise de contact.",
-        image: "/projects/nhp_cover.png",
+        image: "/projects/nhp_cover.webp",
         status: "Terminé",
         link: "https://dsa-multiservices.vercel.app/",
         techs: [
@@ -87,7 +87,7 @@ const projects: Project[] = [
         clickable: true,
         description:
             "Jeu mobile réalisé en Kotlin, lié à une peluche robotique via Bluetooth BLE. Les actions du joueur sur l'application font bouger la peluche (pattes avant et queue). Le système embarqué de la peluche est fait avec des composants Arduino.",
-        image: "/projects/vi_cover.png",
+        image: "/projects/vi_cover.webp",
         status: "En cours",
         link: "",
         techs: [
@@ -101,7 +101,7 @@ const projects: Project[] = [
         clickable: true,
         description:
             "Une plateforme d'articles sur l'élevage des colombes et tourterelles. Disponible en plusieurs langues.",
-        image: "/projects/dpg_cover.png",
+        image: "/projects/dpg_cover.webp",
         status: "En cours",
         link: "https://dovepigeonguide.com/",
         techs: [
@@ -121,7 +121,7 @@ const projects: Project[] = [
         clickable: false,
         description:
             "FullRemoteSeekers est une plateforme de recherche d'emploi 100% remote. Projet en pause.",
-        image: "/projects/frs_cover.png",
+        image: "/projects/frs_cover.webp",
         status: "En pause",
         link: "http://fullremoteseekers.com/",
         techs: [
@@ -139,7 +139,7 @@ const projects: Project[] = [
         clickable: true,
         description:
             "Premier projet de développement mobile. Il s'agit d'un jeu où vous devez prendre soin d'un renard virtuel en jouant à des mini-jeux et en dévérouillant des endroits et des objets en accomplissant des quêtes. Projet en pause momentannée.",
-        image: "/projects/mdf_cover.png",
+        image: "/projects/mdf_cover.webp",
         status: "En pause",
         link: "https://www.youtube.com/shorts/BBcZHA1A59M",
         techs: [
@@ -155,7 +155,7 @@ const projects: Project[] = [
         clickable: false,
         description:
             "Ce site ! Construit avec Next, TypeScript et Tailwind CSS, dans une architecture Turborepo.",
-        image: "/projects/pf_cover.png",
+        image: "/projects/pf_cover.webp",
         status: "Terminé",
         link: "#",
         techs: [
