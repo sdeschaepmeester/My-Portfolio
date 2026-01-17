@@ -39,8 +39,8 @@ function variantClasses(variant: Variant): string {
         default:
             return [
                 "border border-primary-light",
-                "bg-primary-light text-white",
-                "hover:bg-secondary hover:border-secondary",
+                "bg-secondary text-white",
+                "hover:bg-primary-light hover:border-secondary",
             ].join(" ");
     }
 }
