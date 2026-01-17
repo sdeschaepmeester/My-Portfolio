@@ -13,6 +13,20 @@ type Props = {
 };
 
 export default function ProjectSlideMobile({ project, statusColors, techIcons }: Props) {
+
+    const getCTALabel = () => {
+        switch (project.id) {
+            case "frs":
+                return "POC en cours";
+            case "vi":
+                return "Pas de site public";
+            case "cf":
+                return "Privé";
+            default:
+                return "Voir le projet";
+        }
+    }
+
     return (
         <>
             {/* Fixed top image (100% width, 40vh height) */}
@@ -84,7 +98,7 @@ export default function ProjectSlideMobile({ project, statusColors, techIcons }:
             {/* Floating CTA */}
             <div className="fixed left-0 right-0 bottom-4 z-40 px-4">
                 <div className="bg-primary-dark/70 backdrop-blur rounded-xl p-2 shadow-lg">
-                    {project.title === "Mon portfolio" ? (
+                    {project.id === "pf" ? (
                         <p className="mb-16 w-full py-3 text-center bg-gray-800 text-white rounded font-semibold">
                             Vous êtes ici 😉
                         </p>
@@ -99,9 +113,9 @@ export default function ProjectSlideMobile({ project, statusColors, techIcons }:
                             fullWidth
                             variant="primary"
                             aria-disabled={project.clickable ? undefined : true}
-                            style={{marginBottom: 16}}
+                            style={{ marginBottom: 16 }}
                         >
-                            {project.id === "frs" ? "POC en cours" : "Voir le projet"}
+                            {getCTALabel()}
                         </CustomButton>
                     )}
                 </div>

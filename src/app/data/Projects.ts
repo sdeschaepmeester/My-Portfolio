@@ -79,6 +79,23 @@ const projects: Project[] = [
         ],
     },
     {
+        id: "cf",
+        title: "Outil de prospection",
+        clickable: false,
+        description:
+            "Outil de prospection B2B permettant d’identifier des entreprises à partir de données publiques selon des critères géographiques et sectoriels.",
+        image: "/projects/project_cf.webp",
+        status: "Terminé",
+        link: "",
+        techs: [
+            { label: "Next", iconKey: "next", description: "Frontend SSR et routing" },
+            { label: "TypeScript", iconKey: "typescript", description: "Sécurité et maintenabilité du code" },
+            { label: "Tailwind CSS", iconKey: "tailwind", description: "UI rapide et responsive" },
+            { label: "Cloudflare", iconKey: "cloudflare", description: "Déploiement" },
+            { label: "Open Data (INSEE)", iconKey: "database", description: "Recherche et filtrage géographique" },
+        ],
+    },
+    {
         id: "dpg",
         title: "DovePigeonGuide",
         clickable: true,
@@ -86,7 +103,7 @@ const projects: Project[] = [
             "Une plateforme d'articles sur l'élevage des colombes et tourterelles. Chaque article subit une revue avant d'être publié sur la plateforme. Design canva en lien.",
         image: "/projects/project_dpg.webp",
         status: "En cours",
-        link: "https://www.canva.com/design/DAGxb8BMbrU/qO7WimXQ2DHic9EaELHV1Q/edit?utm_content=DAGxb8BMbrU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+        link: "https://dovepigeonguide.com/",
         techs: [
             { label: "Next", iconKey: "next", description: "Framework Next suivant la stack T3" },
             { label: "Resend", iconKey: "resend", description: "Réception et envoie d'emails automatique" },

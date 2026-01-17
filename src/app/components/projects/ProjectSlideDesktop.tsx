@@ -13,6 +13,20 @@ type Props = {
 };
 
 export default function ProjectSlideDesktop({ project, statusColors, techIcons }: Props) {
+
+    const getCTALabel = () => {
+        switch (project.id) {
+            case "frs":
+                return "POC en cours";
+            case "vi":
+                return "Pas de site public";
+            case "cf":
+                return "Privé";
+            default:
+                return "Voir le projet";
+        }
+    }
+
     return (
         <div className="h-full w-full flex flex-row px-20 gap-6 items-center justify-center">
             {/* Left: image */}
@@ -78,7 +92,7 @@ export default function ProjectSlideDesktop({ project, statusColors, techIcons }
                     </div>
                 </div>
 
-                {project.title === "Mon portfolio" ? (
+                {project.id === "pf" ? (
                     <p className="w-full py-4 text-center bg-gray-800 text-white rounded font-semibold">
                         Vous êtes ici 😉
                     </p>
@@ -93,7 +107,7 @@ export default function ProjectSlideDesktop({ project, statusColors, techIcons }
                             variant="primary"
                             aria-disabled={project.clickable ? undefined : true}
                         >
-                            {project.id === "frs" ? "POC en cours" : "Voir le projet"}
+                            {getCTALabel()}
                         </CustomButton>
                     </div>
                 )}
