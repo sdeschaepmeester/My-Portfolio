@@ -8,13 +8,13 @@ export default function SectionFormations() {
     const technicalSkills = [
         { key: "frontend", icon: <FaCode />, label: "Développement front-end (React, Next, JS, TS)" },
         { key: "uiux", icon: <FaPalette />, label: "UI/UX Design (Material UI, Tailwind)" },
-        { key: "mobile", icon: <FaMobileAlt />, label: "Développement mobile (React native, Redux)" },
+        { key: "mobile", icon: <FaMobileAlt />, label: "Développement mobile (React native, Redux, Kotlin)" },
         { key: "backend", icon: <FaCogs />, label: "Développement Back-End (Python/FastAPI, Java/SpringBoot)" },
         { key: "pm", icon: <FaFolder />, label: "Gestion de projet, Agilité (Kanban, Scrum)" },
     ];
 
     const formations = [
-        { year: "2022-2024", title: "Master Architecte Logiciel", school: "OpenClassrooms" },
+        { year: "2022-2025", title: "Master Architecte Logiciel", school: "OpenClassrooms" },
         { year: "2021-2022", title: "Master IA et Big Data", school: "École Itescia by ESIEE-IT" },
         { year: "2020-2021", title: "Licence Développeur web et mobile", school: "Coding Factory" },
         { year: "2018-2020", title: "BTS Services informatique aux organisations", school: "Lycée Jean Jacques Rousseau" },
@@ -28,7 +28,7 @@ export default function SectionFormations() {
             <div className="w-full h-full flex items-center">
                 <div className="w-full h-full bg-gradient-to-b from-gray-200 to-white flex flex-col items-center justify-center px-4 sm:px-6 md:px-12 lg:px-16">
 
-                    {/* ------------------------ Title ------------------------ */}
+                    {/* Title */}
                     <h2 className="text-primary-darker font-bold text-center mb-8 text-[clamp(1.5rem,3.5vw,2.75rem)]">
                         Mes formations et compétences techniques
                     </h2>

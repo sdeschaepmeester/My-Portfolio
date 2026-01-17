@@ -63,7 +63,7 @@ const getCTAConfig = (project: Project): CTAConfig => {
         case "frs":
             return { type: "label", text: "POC en cours" };
         case "vi":
-            return { type: "label", text: "Pas de site public" };
+            return { type: "label", text: "Privé" };
         case "cf":
             return { type: "label", text: "Privé" };
         default:
@@ -187,7 +187,7 @@ export default function SectionProjects() {
                 >
                     {projects.map((project) => (
                         <SwiperSlide key={project.id} className="h-full">
-                            {/* Desktop */}
+                            {/* ------------------------ Desktop ------------------------ */}
                             <div className="hidden md:flex h-full w-full px-20 gap-6 items-center">
                                 <div className="flex-1 h-[85%]">
                                     <img
@@ -211,7 +211,7 @@ export default function SectionProjects() {
                                 </div>
                             </div>
 
-                            {/* Mobile */}
+                            {/* ------------------------ Mobile ------------------------ */}
                             <div className="md:hidden h-full w-full flex flex-col px-2 pt-4">
                                 <div className="w-full aspect-[4/3] max-h-[26vh] shrink-0 overflow-hidden rounded-xl shadow-md bg-gray-800 flex items-center justify-center">
                                     <img

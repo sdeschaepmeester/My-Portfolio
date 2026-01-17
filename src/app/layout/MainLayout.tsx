@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import NavBar from '../components/NavBar';
+import ScrollToTop from '../components/ScrollToTop';
 
 type Props = {
     children: ReactNode;
@@ -22,6 +23,7 @@ export default function MainLayout({ children, scrollable = true }: Props) {
                     </div>
                 )}
             </main>
+            <ScrollToTop />
         </div>
     );
 }

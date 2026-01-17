@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { FaHome, FaFileAlt, FaFolderOpen, FaEnvelope } from "react-icons/fa";
 import CustomButton from "./buttons/CustomButton";
 
@@ -43,7 +42,7 @@ export default function NavBar() {
                 >
                     Me contacter
                 </CustomButton>
-                {/* Small screens */}
+                {/* Small screens and mobile */}
                 <a href="#projects" className="block md:hidden">
                     <FaFolderOpen className="w-6 h-6" />
                 </a>

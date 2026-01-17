@@ -1,6 +1,7 @@
 export default function SectionHero() {
     return (
         <section className="relative snap-start h-screen bg-gradient-to-b from-[#060610] to-primary flex items-center justify-center overflow-hidden">
+            {/* Hero bg */}
             <div className="absolute inset-0 z-0">
                 <img
                     src="/hero.webp"
@@ -8,7 +9,7 @@ export default function SectionHero() {
                     className="w-full h-full object-cover opacity-100"
                 />
             </div>
-            {/* ---------------- Main content ---------------- */}
+            {/* Titles */}
             <div className="relative z-20 mx-auto px-4 text-center text-white w-[90vw] md:w-[75vw]">
                 <h1
                     className="

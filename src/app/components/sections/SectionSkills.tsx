@@ -1,104 +1,105 @@
 "use client";
 
-import "swiper/css";
-import { useState } from "react";
+import { JSX, useEffect, useState } from "react";
 import { FaCogs, FaBullseye, FaHandRock } from "react-icons/fa";
 
+type Skill = {
+    key: string;
+    label: string;
+    icon: JSX.Element;
+};
+
+const SKILLS: Skill[] = [
+    { key: "autonomie", label: "Autonomie", icon: <FaHandRock /> },
+    { key: "organisation", label: "Organisation", icon: <FaCogs /> },
+    { key: "rigueur", label: "Rigueur", icon: <FaBullseye /> },
+];
+
 export default function SectionSkills() {
-    // Desktop data 
-    const skillsGeneral = [
-        { icon: <FaHandRock />, label: "Autonomie" },
-        { icon: <FaCogs />, label: "Organisation" },
-        { icon: <FaBullseye />, label: "Rigueur" },
-    ];
+    const [activeIndex, setActiveIndex] = useState(0);
 
-    // Mobile data 
-    const mobileSkills = [
-        { key: "autonomie", icon: <FaHandRock />, title: "Autonomie" },
-        { key: "organisation", icon: <FaCogs />, title: "Organisation" },
-        { key: "rigueur", icon: <FaBullseye />, title: "Rigueur" },
-    ];
+    // Animation loop
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setActiveIndex((prev) => (prev + 1) % SKILLS.length);
+        }, 1600);
 
-    const [activeSkill, setActiveSkill] = useState<string | null>("autonomie");
-
-    const toggleSkill = (key: string) => {
-        setActiveSkill(prev => (prev === key ? null : key));
-    };
+        return () => clearInterval(interval);
+    }, []);
 
     return (
         <section className="snap-start h-screen w-screen">
-            <div className="w-full h-full flex items-center">
-                <div className="w-full h-full bg-gradient-to-b from-primary-darker to-primary-dark flex flex-col items-center justify-center gap-8 px-4 sm:px-6 md:px-12 lg:px-16">
+            <div className="w-full h-full bg-gradient-to-b from-primary-darker to-primary-dark flex flex-col items-center justify-center px-4 sm:px-6 md:px-12 lg:px-16">
 
-                    {/* ------------------------ Desktop ------------------------ */}
-                    <div className="hidden md:block w-full">
-                        <h2 className="font-bold mb-4 text-center text-[clamp(1.5rem,3.5vw,2.75rem)] text-neutral-lighter">
-                            Compétences générales
-                        </h2>
-                        <p className="w-full mb-16 text-primary-lightest text-center text-[clamp(0.95rem,1.4vw,1.15rem)] leading-relaxed mb-6">
-                            En plus de mes compétences techniques, mes expériences m&apos;ont apportées diverses compétences générales.
-                        </p>
-                        <div className="w-[50%] mx-auto grid grid-cols-3 sm:grid-cols-4 md:grid-cols-3 gap-4 justify-items-center">
-                            {skillsGeneral.map((skill, index) => (
-                                <div key={index}>
-                                    <div className="flex flex-col items-center bg-primary-lightest rounded-full shadow-md p-4 w-16 sm:w-20 md:w-32 h-16 sm:h-20 md:h-32">
-                                        <div className="flex items-center justify-center text-primary-darker rounded-full w-14 sm:w-16 md:w-32 h-14 sm:h-16 md:h-32 text-2xl sm:text-3xl md:text-6xl">
-                                            {skill.icon}
-                                        </div>
-                                    </div>
-                                    <p className="text-white text-xs md:text-xl sm:text-sm font-medium text-center mt-2 sm:mt-4">
-                                        {skill.label}
-                                    </p>
+                {/* Title */}
+                <h2 className="font-bold text-center text-neutral-lighter mb-4 text-[clamp(1.4rem,4vw,2.6rem)]">
+                    Compétences générales
+                </h2>
+
+                <p className="max-w-2xl text-center text-primary-lightest mb-10 text-[clamp(0.9rem,1.6vw,1.1rem)] leading-relaxed">
+                    En plus de mes compétences techniques, mes expériences m&apos;ont apporté des compétences générales solides.
+                </p>
+
+                {/* ------------------------ Desktop ------------------------ */}
+                <div className="hidden md:grid grid-cols-3 gap-10">
+                    {SKILLS.map((skill, index) => {
+                        const active = index === activeIndex;
+
+                        return (
+                            <div key={skill.key} className="flex flex-col items-center">
+                                <div
+                                    className={`
+                                        bg-secondary-lighter rounded-full shadow-md
+                                        flex items-center justify-center
+                                        transition-transform duration-500 ease-in-out
+                                        w-[clamp(4rem,10vw,8rem)]
+                                        h-[clamp(4rem,10vw,8rem)]
+                                        ${active ? "scale-125" : "scale-100"}
+                                    `}
+                                >
+                                    <span className="text-primary-darker text-[clamp(1.5rem,4vw,3.5rem)]">
+                                        {skill.icon}
+                                    </span>
                                 </div>
-                            ))}
-                        </div>
 
+                                <p className="mt-4 text-white font-medium text-[clamp(0.8rem,1.6vw,1.2rem)]">
+                                    {skill.label}
+                                </p>
+                            </div>
+                        );
+                    })}
+                </div>
+
+                {/* ------------------------ Mobile ------------------------ */}
+                <div className="md:hidden w-full flex flex-col items-center gap-6">
+                    <div className="flex justify-center gap-5">
+                        {SKILLS.map((skill, index) => {
+                            const active = index === activeIndex;
+
+                            return (
+                                <div
+                                    key={skill.key}
+                                    className={`
+                                        rounded-full shadow-md
+                                        flex items-center justify-center
+                                        transition-transform duration-500 ease-in-out
+                                        w-14 h-14
+                                        ${active ? "bg-secondary-lighter scale-125" : "bg-secondary-lighter scale-100"}
+                                    `}
+                                >
+                                    <span className="text-primary-darker text-2xl">
+                                        {skill.icon}
+                                    </span>
+                                </div>
+                            );
+                        })}
                     </div>
 
-                    {/* ------------------------ Mobile ------------------------ */}
-                    <div className="md:hidden flex flex-col gap-8 w-full">
-                        <h2 className="font-bold text-center text-[clamp(1.35rem,5.5vw,2rem)] text-neutral-lighter">
-                            Compétences générales
-                        </h2>
-                        <p className="text-primary-lightest text-sm sm:text-base mb-4 text-center">
-                            En plus de mes compétences techniques, mes expériences m&apos;ont apportées diverses compétences générales.
-                        </p>
-
-                        {/* ------------------------ Icons mobile ------------------------ */}
-                        <div className="flex items-center justify-center gap-5">
-                            {mobileSkills.map((s) => {
-                                const active = activeSkill === s.key;
-                                return (
-                                    <button
-                                        key={s.key}
-                                        type="button"
-                                        aria-pressed={active}
-                                        onClick={() => toggleSkill(s.key)}
-                                        className={`rounded-full w-14 h-14 flex items-center justify-center transition-transform shadow-md ${active
-                                            ? "scale-105 bg-white"
-                                            : "bg-primary-lightest"
-                                            }`}
-                                    >
-                                        <span
-                                            className="text-2xl text-primary-darker"
-                                            aria-hidden="true"
-                                        >
-                                            {s.icon}
-                                        </span>
-                                        <span className="sr-only">{s.title}</span>
-                                    </button>
-                                );
-                            })}
-                        </div>
-                        <div className="mt-4 min-h-[2.5rem]">
-                            {activeSkill && (
-                                <div className="mx-auto max-w-md text-center text-neutral-lighter text-sm bg-white/10 backdrop-blur-sm rounded-md px-3 py-2">
-                                    {mobileSkills.find((s) => s.key === activeSkill)?.title}
-                                </div>
-                            )}
+                    <div className="min-h-[2.5rem]">
+                        <div className="mx-auto text-center text-neutral-lighter text-sm bg-white/10 backdrop-blur-sm rounded-md px-4 py-2">
+                            {SKILLS[activeIndex].label}
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
