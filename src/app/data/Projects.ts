@@ -96,26 +96,6 @@ const projects: Project[] = [
         ],
     },
     {
-        id: "dpg",
-        title: "DovePigeonGuide",
-        clickable: true,
-        description:
-            "Une plateforme d'articles sur l'élevage des colombes et tourterelles. Disponible en plusieurs langues.",
-        image: "/projects/dpg_cover.webp",
-        status: "En cours",
-        link: "https://dovepigeonguide.com/",
-        techs: [
-            { label: "Next", iconKey: "next", description: "Framework Next suivant la stack T3" },
-            { label: "Resend", iconKey: "resend", description: "Réception et envoie d'emails automatique" },
-            { label: "Prisma", iconKey: "prisma", description: "Base de données Next" },
-            { label: "i18n", iconKey: "i18n", description: "Gestion des traductions" },
-            { label: "TypeScript", iconKey: "typescript", description: "TypeScript" },
-            { label: "CI/CD", iconKey: "cicd", description: "Github Actions intégration continue et déploiement continu" },
-            { label: "Docker", iconKey: "docker", description: "Conteneurisation des applications" },
-            { label: "Vercel", iconKey: "vercel", description: "Hébergement de l'application" },
-        ],
-    },
-    {
         id: "frs",
         title: "FullRemoteSeekers",
         clickable: false,
