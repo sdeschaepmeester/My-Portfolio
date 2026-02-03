@@ -30,9 +30,10 @@ const projects: Project[] = [
             { label: "NextJS", iconKey: "next", description: "Framework NextJS, pour l'amélioration du référencement." },
             { label: "TypeScript", iconKey: "typescript", description: "TypeScript" },
             { label: "Resend", iconKey: "resend", description: "Service d'emails" },
+            { label: "Cloudflare", iconKey: "cloudflare", description: "Déploiement automatique de l'application" },
         ],
     },
-      {
+    {
         id: "cf",
         title: "Outil de prospection clients",
         clickable: false,
@@ -57,7 +58,7 @@ const projects: Project[] = [
             "CycleHarmony est un site web vitrine pour une auto-entrepreneuse experte en symptothermie, une méthode de contraception naturelle. Le site présente ce qu'est la symptothermie, les différents packs de service et un formulaire de contact pour prise de rendez-vous.",
         image: "/projects/ch_cover.webp",
         status: "Terminé",
-        link: "https://cycleharmony.vercel.app/",
+        link: "https://www.cycle-harmony.fr/",
         techs: [
             { label: "ReactJS", iconKey: "react", description: "Framework React TypeScript." },
             { label: "TypeScript", iconKey: "typescript", description: "TypeScript" },
@@ -78,7 +79,6 @@ const projects: Project[] = [
             { label: "Next", iconKey: "next", description: "Framework NextJS." },
             { label: "TypeScript", iconKey: "typescript", description: "TypeScript" },
             { label: "Resend", iconKey: "resend", description: "Service d'emails" },
-            { label: "Vercel", iconKey: "vercel", description: "Déploiement automatique de l'application" },
         ],
     },
     {
